@@ -92,7 +92,7 @@
     <plugin name="cordova-plugin-device" spec="^1.1.4" />
     <plugin name="cordova-plugin-splashscreen" spec="^4.0.3" />
     <plugin name="cordova-sqlite-storage" spec="^2.0.4" />
-    <plugin name="cordova-plugin-x-socialsharing" spec="^5.1.8" />
+    <!--<plugin name="cordova-plugin-x-socialsharing" spec="^5.1.8" />-->
     <plugin name="cordova-plugin-geolocation" spec="^2.4.3">
         <variable name="Default delivery point detection" value=" " />
     </plugin>
