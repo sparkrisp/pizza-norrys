@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.intrabytes.ecommerce" version="1.7.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Pizza Norrys</name>
-    <description>Tu pizza ya!</description>
+    <description>Tu pizza ya!!!</description>
     <author email="arielrm@intrabytes.com" href="http://www.intrabytes.com/">Ariel Iván Ruiz Mateos</author>
     <content src="index.html" />
     <access origin="*" />
