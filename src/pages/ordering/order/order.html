@@ -1,4 +1,4 @@
-﻿<ion-header>
+<ion-header>
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
@@ -40,7 +40,7 @@
         <ion-label>{{ 'order.cash_on_delivery' | translate }}</ion-label>
         <ion-radio name="payment_method" value="cash"></ion-radio>
       </ion-item>
-     <<ion-item>
+      <ion-item>
         <ion-label>{{ 'order.stripe' | translate }}</ion-label>
         <ion-radio name="payment_method" value="stripe"></ion-radio>
       </ion-item>
@@ -60,7 +60,7 @@
       <div>{{ 'order.price' | translate }} {{ cTotalPrice | ecurrency }}</div>
       <div>{{ 'order.delivery_price' | translate }} {{ deliveryPrice | ecurrency }}</div>
       <div>{{ 'order.total' | translate }} {{ cTotalPrice + deliveryPrice | ecurrency }}</div>
-     <div *ngIf="cLoyaltyUsed > 0">{{ 'order.loyalty_used' | translate:{amount: cLoyaltyUsed | ecurrency} }}</div>
+      <div *ngIf="cLoyaltyUsed > 0">{{ 'order.loyalty_used' | translate:{amount: cLoyaltyUsed | ecurrency} }}</div>
       <div *ngIf="discountPrice">{{ 'order.coupon_discount' | translate }} {{ cFullPrice - discountPrice | ecurrency
         }}</div>
       <div *ngIf="discountPrice > 0 || cLoyaltyUsed > 0">Total with discount {{ discountPrice - cLoyaltyUsed + deliveryPrice | ecurrency }}</div>
