@@ -3,11 +3,7 @@
 		"welcome": "Bienvenido a",
 		"app_name": "Pizza Norrys",
 		"start": "Iniciar la aplicación",
-<<<<<<< HEAD
-		"alta": "Alta",
-=======
 		"signup": "Crear un usuario",
->>>>>>> 02d337a30e36b633dc8bcc42c09d2b23786e336e
 		"login": "Ya tenés una cuenta?"
    },
 	"tabs": {
