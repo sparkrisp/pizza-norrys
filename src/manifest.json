@@ -1,11 +1,7 @@
 {
   "name": "Ionic",
   "short_name": "Ionic",
-<<<<<<< HEAD
-  "start_url": "main.html",
-=======
   "start_url": "index.html",
->>>>>>> 02d337a30e36b633dc8bcc42c09d2b23786e336e
   "display": "standalone",
   "icons": [{
     "src": "assets/imgs/logo.png",
