@@ -25,7 +25,11 @@ export class APIService {
               private storage: Storage
   ) {
     // this.rootUrl = 'http://localhost:8000/api/';
+<<<<<<< HEAD
     this.rootUrl = 'https://pizzanorrys.desa-intrabytes.com.ar/public/api/';
+=======
+    this.rootUrl = 'http://6e0c1bd8.ngrok.io/api/';
+>>>>>>> 02d337a30e36b633dc8bcc42c09d2b23786e336e
     // this.rootUrl = 'http://foodypoint.giraffy.tech/api/';
     // this.rootUrl = 'http://10.0.3.2:8000/api/';
     // this.rootUrl = 'http://192.168.8.100:8000/api/';

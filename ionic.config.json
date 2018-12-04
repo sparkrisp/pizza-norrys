@@ -1,8 +1,16 @@
 {
+<<<<<<< HEAD
   "name": "ecommerce-app",
+=======
+  "name": "pizzanorrys",
+>>>>>>> 02d337a30e36b633dc8bcc42c09d2b23786e336e
   "integrations": {
     "cordova": {}
   },
   "type": "ionic-angular",
+<<<<<<< HEAD
   "pro_id": "5d523476"
+=======
+  "pro_id": "baa525b4"
+>>>>>>> 02d337a30e36b633dc8bcc42c09d2b23786e336e
 }
