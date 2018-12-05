@@ -89,7 +89,7 @@
 		"select": "seleccionar dirección",
 		"no_service": "la ubicación de entrega no está en el área de servicio"
    },
-	"alta": {
+	"sign": {
 		"name": "Name",
 		"phone": "número de teléfono",
 		"email": "email",
