@@ -123,7 +123,6 @@ export class APIService {
 
   getProducts(category_id): any {
     let url = this.rootUrl + `products?category_id=${category_id}`;
-    console.log("en getProducts por hacer request")
 	return this.http.get(url).toPromise();
   }
 
@@ -162,7 +161,6 @@ export class APIService {
     let serverFetched = false;
     this.storage.get('data').then((v) => {
       if (v && !serverFetched) {
-        console.log("leyendo data");
 		let data = JSON.parse(v);
         this.categories = data.categories;
         this.settings = data.settings;
@@ -175,7 +173,6 @@ export class APIService {
     });
     this.storage.get('userData').then((v) => {
       if (v) {
-		  console.log("leyendo data usuario");
         this.userData = JSON.parse(v);
       }
     }, (e) => {
