@@ -40,14 +40,14 @@
         <ion-label>{{ 'order.cash_on_delivery' | translate }}</ion-label>
         <ion-radio name="payment_method" value="cash"></ion-radio>
       </ion-item>
-      <ion-item>
+      <!--<ion-item>
         <ion-label>{{ 'order.stripe' | translate }}</ion-label>
         <ion-radio name="payment_method" value="stripe"></ion-radio>
       </ion-item>
       <ion-item>
         <ion-label>{{ 'order.paypal' | translate }}</ion-label>
         <ion-radio name="payment_method" value="paypal"></ion-radio>
-      </ion-item>
+      </ion-item>-->
     </ion-list>
     <ion-list *ngIf="userData.loyalty_reward > 0">
       <ion-item>
