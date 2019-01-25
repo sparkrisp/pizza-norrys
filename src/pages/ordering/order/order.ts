@@ -126,7 +126,8 @@ export class OrderPage {
   realPlaceOrder() {
     let loading = this.loadingCtrl.create();
     loading.present();
-    this.apiService.createOrder(this.orderData).then((response) => {
+    this.util.alert(this.orderData, '');
+	this.apiService.createOrder(this.orderData).then((response) => {
       let data = response.json(),
         alert = null,
         title = this.translate.instant('order.error_title'),
