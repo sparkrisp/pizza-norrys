@@ -96,10 +96,10 @@ export function createTranslateLoader(http: HttpClient) {
     UtilService,
     OrderHistoryService,
     // Comment these lines to disable ionic monitoring
-    // IonicErrorHandler,
-    // {provide: ErrorHandler, useClass: MyErrorHandler}
+     IonicErrorHandler,
+     {provide: ErrorHandler, useClass: MyErrorHandler}
     // Uncomment this line to disable ionic monitoring
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    //{provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {
