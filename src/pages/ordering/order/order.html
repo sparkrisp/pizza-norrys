@@ -23,13 +23,13 @@
       <ion-input disabled placeholder="{{ 'order.click_to_write' | translate }}" type="text"
                  [formControl]="orderForm.controls.address"></ion-input>
     </button>
-    <ion-item>
+   <!-- <ion-item>
       <ion-label fixed>{{ 'order.promo_code' | translate }}</ion-label>
       <ion-input placeholder="{{ 'order.optional' | translate }}" type="text"
                  [formControl]="orderForm.controls.promo_code"></ion-input>
       <button ion-button item-right type="button" (click)="validatePromo()">{{ 'order.check_promo' | translate }}
       </button>
-    </ion-item>
+    </ion-item>-->
     <ion-item>
       <ion-label fixed>{{ 'order.comment' | translate }}</ion-label>
       <ion-textarea [formControl]="orderForm.controls.comment"
