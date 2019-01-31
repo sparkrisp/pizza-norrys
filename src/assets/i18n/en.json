@@ -48,7 +48,7 @@
 		"promo_invalid": "el código promocional no es válido o no se puede utilizar",
 		"general_error": "error general",
 		"error_title": "error",
-		"Success": "Éxito!",
+		"success": "Éxito!",
 		"promo_applied": "se aplica el cupón",
 		"order_placed": "su orden se ha colocado correctamente",
 		"payment_error": "error al procesar el pago",
