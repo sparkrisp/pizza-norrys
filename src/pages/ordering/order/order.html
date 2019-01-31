@@ -49,13 +49,13 @@
         <ion-radio name="payment_method" value="paypal"></ion-radio>
       </ion-item>-->
     </ion-list>
-    <ion-list *ngIf="userData.loyalty_reward > 0">
+   <!-- <ion-list *ngIf="userData.loyalty_reward > 0">
       <ion-item>
         <ion-label stacked>{{ 'order.use_reward' | translate:{amount: userData.loyalty_reward | ecurrency} }}</ion-label>
         <ion-input [formControl]="orderForm.controls.loyalty" type="number" max="userData.loyalty_reward"></ion-input>
         <button ion-button item-right type="button" (click)="useReward()">{{ 'order.use' | translate }}</button>
       </ion-item>
-    </ion-list>
+    </ion-list>-->
     <div class="cart-total -nob">
       <div>{{ 'order.price' | translate }} {{ cTotalPrice | ecurrency }}</div>
       <div>{{ 'order.delivery_price' | translate }} {{ deliveryPrice | ecurrency }}</div>

@@ -85,17 +85,17 @@
 		"add_from_other_restaurant_text": "va a agregar producto de diferentes restaurantes. Esto despejará su carrito primero. Continuar? "
    },
 	"map": {
-		"cancelar": "cancelar",
+		"cancel": "cancelar",
 		"select": "seleccionar dirección",
 		"no_service": "la ubicación de entrega no está en el área de servicio"
    },
 	"signup": {
-		"name": "Name",
+		"name": "nombre",
 		"phone": "número de teléfono",
 		"email": "email",
 		"password": "contraseña",
 		"city": "ciudad",
-		"button": "inScripciones",
+		"button": "registrarse",
 		"login": "login usando la cuenta existente",
 		"error": "se ha producido un error general durante la suscripción"
    },
@@ -118,7 +118,7 @@
    },
 	"login": {
 		"email": "email",
-		"Password": "contraseña",
+		"password": "contraseña",
 		"button": "login",
 		"no_account": "registrarse para la nueva cuenta",
 		"error": "el correo electrónico o la contraseña son erróneos"
