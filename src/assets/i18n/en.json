@@ -83,7 +83,7 @@
 		"order": "hacer pedido",
 		"add_from_other_restaurant_title": "agregar producto de otro restaurante",
 		"add_from_other_restaurant_text": "va a agregar producto de diferentes restaurantes. Esto despejará su carrito primero. Continuar? ",
-		"media_mas" : "1/2 más"
+		"media_mas" : "+ 1/2"
    },
 	"map": {
 		"cancel": "cancelar",
