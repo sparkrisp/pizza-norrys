@@ -130,6 +130,7 @@ export class CartService {
         if (count == -2){
             mediaMas = true;
             count = 0.5;
+            alert('media mas');
         }
         if (item == null) {
             this.items.push({
