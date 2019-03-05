@@ -45,7 +45,7 @@
             <ion-row no-padding>
                 <ion-col>
                     <ion-label>Media más</ion-label>
-                    <ion-checkbox checked="False" (click)="mediaMasCart(item, item.checked)">{{'cart.media_mas' | translate}}</ion-checkbox>
+                    <ion-checkbox checked="False" (change)="mediaMasCart(item, $event)" >{{'cart.media_mas' | translate}}</ion-checkbox>
                 </ion-col>
             </ion-row>
         </div>

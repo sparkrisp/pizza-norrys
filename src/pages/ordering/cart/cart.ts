@@ -34,12 +34,13 @@ export class CartPage {
     this.cart.setItemCount(item.product, item.count + 1);
   }
 
-  mediaMasCart(item, chequeado): any {
-    if (!(chequeado)){
-      this.cart.setItemCount(item.product, -3);
-    }else{
+  mediaMasCart(item, event): any {
+    if (event.target.checked ) {
       this.cart.setItemCount(item.product, -2);
-    }
+  }else{
+    this.cart.setItemCount(item.product, -3);
+  }
+    
   }
 
   decreaseCart(item): any {
