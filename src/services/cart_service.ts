@@ -128,11 +128,13 @@ export class CartService {
             }
         });
         if (count == -2){
+            let copiaCount = 0;
+            copiaCount = count;
             mediaMas = true;
-            count = item.count + 0.5;
+            count = 0.5;
         }else{
-            if (count == -3){
-                count = item.count - 0.5;
+            if (count == -3 && item.count != 0){
+                count = count - 0.5;
             }else{
                 mediaMas = false;
             }
@@ -145,7 +147,7 @@ export class CartService {
             });
         }
         else {
-            item.count = count;
+            item.count = item.count + count;
         }
         this.save();
     }

@@ -38,12 +38,12 @@ export class CartPage {
     if (!(chequeado)){
       this.cart.setItemCount(item.product, -3);
     }else{
-    this.cart.setItemCount(item.product, -2);
+      this.cart.setItemCount(item.product, -2);
     }
   }
 
   decreaseCart(item): any {
-    if (item.count == 1) {
+    if (item.count == 1 || item.count == 0.5) {
       this.cart.removeItem(item);
     }
     else {
