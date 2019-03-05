@@ -134,7 +134,7 @@ export class CartService {
             count = 0.5;
         }else{
             if (count == -3 && item.count != 0){
-                count = count - 0.5;
+                count = -0.5;
             }else{
                 mediaMas = false;
             }
