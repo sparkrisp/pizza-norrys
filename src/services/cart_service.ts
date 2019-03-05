@@ -129,9 +129,13 @@ export class CartService {
         });
         if (count == -2){
             mediaMas = true;
-            count = 0.5;
+            count = item.count + 0.5;
         }else{
-            mediaMas = false;
+            if (count == -3){
+                count = item.count - 0.5;
+            }else{
+                mediaMas = false;
+            }
         }
         if (item == null) {
             this.items.push({
