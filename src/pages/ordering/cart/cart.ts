@@ -55,7 +55,11 @@ export class CartPage {
   cartPrice() {
     let result = 0;
     this.items.forEach((item) => {
-      result = result + item.product.price * item.count;
+      if (item.mediaMas){
+        result = result + item.product.price / 2;
+      }else{
+        result = result + item.product.price * item.count;
+      }
     });
     return result;
   }
