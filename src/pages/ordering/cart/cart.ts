@@ -34,6 +34,10 @@ export class CartPage {
     this.cart.setItemCount(item.product, item.count + 1);
   }
 
+  mediaMasCart(item): any {
+    this.cart.setItemCount(item.product, -2);
+  }
+
   decreaseCart(item): any {
     if (item.count == 1) {
       this.cart.removeItem(item);

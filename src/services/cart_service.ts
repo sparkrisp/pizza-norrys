@@ -121,15 +121,21 @@ export class CartService {
 
     setItemCount(product: any, count: number): any {
         let item = null;
+        let mediaMas = null;
         this.items.forEach((cart_item) => {
             if (cart_item.product.id == product.id) {
                 item = cart_item;
             }
         });
+        if (count == -2){
+            mediaMas = true;
+            count = 0.5;
+        }
         if (item == null) {
             this.items.push({
                 product: product,
-                count: count
+                count: count,
+                mediaMas: mediaMas
             });
         }
         else {
