@@ -36,9 +36,9 @@ export class CartPage {
   }
 
   mediaMasCart(item): any {
-    
+    alert(item);
     //if (check ) {
-      this.cart.setItemCount(item.product, -2);
+      //this.cart.setItemCount(item.product, -2);
     //}else{
     //  this.cart.setItemCount(item.product, -3);
     //}
