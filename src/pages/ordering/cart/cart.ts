@@ -13,7 +13,7 @@ import {APIService} from '../../../services/api_service';
 export class CartPage {
   public items;
   public loggedIn = false;
-  public mediaMas = false;
+  public mediaMas:boolean;
 
   constructor(
     private cart: CartService,
@@ -35,8 +35,8 @@ export class CartPage {
     this.cart.setItemCount(item.product, item.count + 1);
   }
 
-  mediaMasCart(item): any {
-    alert(item.checked);
+  mediaMasCart(): any {
+    alert(this.mediaMas);
 
     //if (check ) {
       //this.cart.setItemCount(item.product, -2);
