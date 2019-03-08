@@ -36,12 +36,12 @@ export class CartPage {
   }
 
   mediaMasCart(item): any {
-    alert(check);
-    if (check ) {
+    
+    //if (check ) {
       this.cart.setItemCount(item.product, -2);
-    }else{
-      this.cart.setItemCount(item.product, -3);
-    }
+    //}else{
+    //  this.cart.setItemCount(item.product, -3);
+    //}
     
   }
 
