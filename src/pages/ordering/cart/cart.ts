@@ -35,7 +35,7 @@ export class CartPage {
     this.cart.setItemCount(item.product, item.count + 1);
   }
 
-  mediaMasCart(): any {
+  mediaMasCart(item): any {
     alert(this.mediaMas);
 
     if (this.mediaMas) {
