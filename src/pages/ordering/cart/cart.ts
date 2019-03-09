@@ -38,11 +38,11 @@ export class CartPage {
   mediaMasCart(): any {
     alert(this.mediaMas);
 
-    //if (check ) {
-      //this.cart.setItemCount(item.product, -2);
-    //}else{
-    //  this.cart.setItemCount(item.product, -3);
-    //}
+    if (this.mediaMas) {
+      this.cart.setItemCount(item.product, -2);
+    }else{
+      this.cart.setItemCount(item.product, -3);
+    }
     
   }
 
