@@ -44,7 +44,7 @@
             </ion-row>
             <ion-row no-padding>
                 <ion-col>
-                    <ion-label>Media más</ion-label>
+                    <ion-label>Media más {{ item.category }}</ion-label>
                     <ion-checkbox (ionChange)="mediaMasCart(item)" [(ngModel)]="mediaMas" >{{'cart.media_mas' | translate}}</ion-checkbox>
                 </ion-col>
             </ion-row>
