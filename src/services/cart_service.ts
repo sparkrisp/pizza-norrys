@@ -149,7 +149,11 @@ export class CartService {
         else {
             //alert(item.count);
            // alert(count);
-            item.count = count;
+           if (count == 0.5 || count == -0.5){ 
+            item.count = item.count + count;
+           }else{
+               item.count = count;
+           }
         }
         this.save();
     }

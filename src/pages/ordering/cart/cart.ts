@@ -29,7 +29,7 @@ export class CartPage {
 
   ionViewWillEnter() {
     this.items = this.cart.getItems();
-    this.mediaMas = false;
+   // this.mediaMas = false;
   }
 
   increaseCart(item): any {
