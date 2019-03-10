@@ -29,6 +29,7 @@ export class CartPage {
 
   ionViewWillEnter() {
     this.items = this.cart.getItems();
+    this.mediaMas = false;
   }
 
   increaseCart(item): any {
@@ -36,7 +37,7 @@ export class CartPage {
   }
 
   mediaMasCart(item): any {
-   alert(item.product.category_id);
+  // alert(item.product.category_id);
     if (this.mediaMas) {
       this.cart.setItemCount(item.product, -2);
     }else{
