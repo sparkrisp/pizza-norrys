@@ -149,7 +149,7 @@ export class CartService {
         else {
             //alert(item.count);
            // alert(count);
-            item.count = item.count + count;
+            item.count = count;
         }
         this.save();
     }
