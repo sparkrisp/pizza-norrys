@@ -38,6 +38,9 @@ export class CartPage {
 
   mediaMasCart(item): any {
   // alert(item.product.category_id);
+    if (item.count == 0 || item.count == 0.5 || item.count == -0.5 || item.count == -1) {
+      this.cart.removeItem(item);
+    }  
     if (this.mediaMas) {
       this.cart.setItemCount(item.product, -2);
     }else{
@@ -47,7 +50,7 @@ export class CartPage {
   }
 
   decreaseCart(item): any {
-    if (item.count == 1 || item.count == 0.5) {
+    if (item.count == 0 || item.count == 0.5 || item.count == -0.5 || item.count == -1) {
       this.cart.removeItem(item);
     }
     else {
