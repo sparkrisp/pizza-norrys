@@ -42,7 +42,7 @@
                     </button>
                 </ion-col>
             </ion-row>
-            <ion-row no-padding  *ngIf="item.product.category_id = 4525">
+            <ion-row no-padding  *ngIf="item.product.category_id == 4525">
                 <ion-col>
                     <ion-label>Media más {{ item.category }}</ion-label>
                     <ion-checkbox (ionChange)="mediaMasCart(item)" [(ngModel)]="mediaMas" >{{'cart.media_mas' | translate}}</ion-checkbox>
