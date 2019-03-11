@@ -50,7 +50,7 @@ export class CartPage {
   }
 
   decreaseCart(item): any {
-    if (item.count == 0 || item.count == 0.5 || item.count == -0.5 || item.count == -1) {
+    if (item.count == 0 || item.count == -0.5 || item.count == -1) {
       this.cart.removeItem(item);
     }
     else {
