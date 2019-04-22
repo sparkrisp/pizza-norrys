@@ -33,7 +33,7 @@ export class CartPage {
   }
 
   increaseCart(item): any {
-    this.cart.setItemCount(item.product, item.count + 1);
+    this.cart.setItemCount(item.product, item.count + 0.5);
   }
 
   mediaMasCart(item): any {
@@ -54,7 +54,7 @@ export class CartPage {
       this.cart.removeItem(item);
     }
     else {
-      this.cart.setItemCount(item.product, item.count - 1);
+      this.cart.setItemCount(item.product, item.count - 0.5);
     }
   }
 
