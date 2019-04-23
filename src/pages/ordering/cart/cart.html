@@ -42,12 +42,12 @@
                     </button>
                 </ion-col>
             </ion-row>
-            <ion-row no-padding  *ngIf="item.product.category_id == 4525">
+            <!--<ion-row no-padding  *ngIf="item.product.category_id == 4525">
                 <ion-col>
                     <ion-label>Media más {{ item.category }}</ion-label>
                     <ion-checkbox (ionChange)="mediaMasCart(item)" ng-repeat="x in items.length" name="chkbx{{x}}" [(ngModel)]="mediaMas" >{{'cart.media_mas' | translate}}</ion-checkbox>
                 </ion-col>
-            </ion-row>
+            </ion-row>-->
         </div>
     </div>
 </ion-content>
