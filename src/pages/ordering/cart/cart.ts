@@ -33,8 +33,12 @@ export class CartPage {
   }
 
   increaseCart(item): any {
-    this.cart.setItemCount(item.product, item.count + 0.5);
-  }
+    if (item.product.category_id == 4525){
+      this.cart.setItemCount(item.product, item.count + 0.5);
+    }else{
+      this.cart.setItemCount(item.product, item.count + 1);
+    }
+}
 
   mediaMasCart(item): any {
   // alert(item.product.category_id);
@@ -54,7 +58,11 @@ export class CartPage {
       this.cart.removeItem(item);
     }
     else {
-      this.cart.setItemCount(item.product, item.count - 0.5);
+      if (item.product.category_id == 4525){
+        this.cart.setItemCount(item.product, item.count - 0.5);
+      }else{
+        this.cart.setItemCount(item.product, item.count - 1);
+      }
     }
   }
 
