@@ -11,7 +11,7 @@
 	<ion-card *ngFor="let item of items" tappable (click)="showDetails(item)" >
 		<ion-item text-wrap>
 			<div class="img-wrapper">
-				<img [src]="item.image_url" *ngIf="item.image_url">
+				<img [src]="item.image_url" *ngIf="item.image_url" style="width:33%">
 			</div>
 		</ion-item>
 	</ion-card>
