@@ -8,11 +8,11 @@
 </ion-header>
 
 <ion-content>
-	<ion-card *ngFor="let item of items" tappable (click)="showDetails(item)" >
-		<ion-item text-wrap>
-			<div class="img-wrapper">
+	<!--<ion-card *ngFor="let item of items" tappable (click)="showDetails(item)" >
+		<ion-item text-wrap>-->
+			<div class="img-wrapper" *ngFor="let item of items" tappable (click)="showDetails(item)">
 				<img [src]="item.image_url" *ngIf="item.image_url" style="width:33%">
 			</div>
-		</ion-item>
-	</ion-card>
+	<!--	</ion-item>
+	</ion-card>-->
 </ion-content>
