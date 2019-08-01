@@ -59,7 +59,7 @@ export class CartPage {
     }
     else {
       if (item.product.category_id == 4525){
-        this.cart.decreaseCountPizza(item.product);
+        this.cart.setItemCount(item.product, item.count - 0.5);
       }else{
         this.cart.setItemCount(item.product, item.count - 1);
       }

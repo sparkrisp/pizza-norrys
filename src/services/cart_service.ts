@@ -119,20 +119,6 @@ export class CartService {
         }
     }
 
-    decreaseCountPizza(item): any {
-        let ind = this.items.indexOf(item);
-        alert(ind);
-        if (ind >= 0) {
-            this.items[ind].count = this.items[ind].count - 0.5;
-            if (this.items[ind].count == 0) {
-                this.removeItem(item);
-            }
-            else {
-                this.save();
-            }
-            alert(this.items[ind].count);
-        }
-    }    
 
     setItemCount(product: any, count: number): any {
         let item = null;
@@ -164,11 +150,11 @@ export class CartService {
         else {
            // alert(item.count);
            // alert(count);
-           if (count == 0.5 || count == -0.5){ 
+         /*  if (count == 0.5 || count == -0.5){ 
             item.count = item.count + count;
-           }else{
+           }else{*/
                item.count = count;
-           }
+          // }
         }
         this.save();
     }
