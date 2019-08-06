@@ -140,6 +140,9 @@ export class CartService {
                 mediaMas = false;
             }
         }
+        if (item.count == 0) {
+            this.removeItem(item);
+        }
         if (item == null) {
             this.items.push({
                 product: product,
