@@ -140,7 +140,7 @@ export class CartService {
                 mediaMas = false;
             }
         }
-        if (item.count == 0) {
+        if (count == 0) {
             this.removeItem(item);
         }
         if (item == null) {
